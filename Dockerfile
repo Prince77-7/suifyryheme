@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # Copy website files
-COPY www.suify.com/ /app/www.suify.com/
+COPY . /app/
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
