@@ -1,0 +1,476 @@
+/* Suify Custom Color Theme */
+:root {
+  --bg-primary: #001e17;
+  --fg-primary: #a48111;
+  --accent-1: #897112;
+  --accent-2: #6d6013;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #d6d6d6;
+  --dark-gray: #999999;
+  --highlight: #a48111;
+}
+
+/* Background colors */
+body, html {
+  background: var(--bg-primary) !important;
+}
+
+section {
+  background: var(--bg-primary) !important;
+}
+
+.transition-fade {
+  background-color: var(--bg-primary) !important;
+}
+
+.companyData:after {
+  background-color: var(--bg-primary) !important;
+}
+
+.footer {
+  background: var(--bg-primary) !important;
+}
+
+/* Primary accent color replacements - TEXT ONLY */
+.h0 strong,
+.nav__link.active,
+.nav__menuLink.active,
+.longform a,
+.campaignList__count {
+  color: var(--fg-primary) !important;
+}
+
+/* Primary accent color replacements - BACKGROUND ONLY */
+.arrowButton__arrow,
+.submitButton,
+.officeList__time,
+.workCard--cta .workCard__media::after {
+  background-color: var(--fg-primary) !important;
+}
+
+/* Accent color 1 for hover states and secondary elements - TEXT ONLY */
+.footer__mainLink.active,
+.footer__mainLink:hover,
+.officeList__name:hover {
+  color: var(--accent-1) !important;
+}
+
+/* Accent color 1 for hover states and secondary elements - BACKGROUND ONLY */
+.button {
+  background-color: var(--accent-1) !important;
+}
+
+/* Text colors */
+.subheading {
+  color: var(--light-gray) !important;
+}
+
+.footer__mainLink,
+.footer__socialLinks .subheading,
+.statsSection .subheading,
+.ourTeam__count,
+.companyData__bottom .body,
+.mediaSentence__bottom .body,
+.imageCircle__textBlock,
+.officeList__address,
+.campaignList__row {
+  color: var(--dark-gray) !important;
+}
+
+/* Primary text should remain white */
+body,
+.nav__links,
+.textField__input,
+button,
+input,
+select,
+textarea {
+  color: var(--white) !important;
+}
+
+/* Button styling */
+.button {
+  color: var(--bg-primary) !important;
+}
+
+.submitButton input {
+  color: var(--bg-primary) !important;
+}
+
+/* Arrow button styling */
+.arrowButton__arrow {
+  background-color: var(--fg-primary) !important;
+}
+
+/* Navigation styling */
+.nav__menuBg {
+  background-color: var(--light-gray) !important;
+}
+
+/* Form styling */
+.textField__input {
+  border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.textField__input:focus {
+  border-color: var(--white) !important;
+}
+
+/* Work card and image styling */
+.workCard__media {
+  background-color: #202020 !important;
+}
+
+.homeHeader__mediaCard,
+.aboutHeader__card .window {
+  background-color: #202020 !important;
+}
+
+/* Logo and icon blending */
+.clientLogos__logo span {
+  background-color: var(--fg-primary) !important;
+}
+
+/* Time display */
+.officeList__time {
+  background-color: var(--fg-primary) !important;
+  color: var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
+}
+
+/* Campaign list hover */
+.campaignList__row:hover {
+  background-color: rgba(164, 129, 17, 0.1) !important;
+}
+
+/* Stats section borders */
+.statsSection__stat::after,
+.servicesList__service::after,
+.companyData__servicesList li:after {
+  background-color: var(--white) !important;
+}
+
+/* Special accent elements */
+.campaignList__row>span:nth-child(2) span:before {
+  color: var(--fg-primary) !important;
+  background-color: transparent !important;
+}
+
+/* Footer links hover */
+.footer__socialLink:hover {
+  color: var(--accent-1) !important;
+  background-color: transparent !important;
+}
+
+/* Office list hover effects */
+.officeList__office:hover .officeList__name {
+  color: var(--fg-primary) !important;
+}
+
+.officeList__office:hover .officeList__address {
+  color: var(--white) !important;
+}
+
+/* Ensure proper contrast for readability */
+.longform a:hover {
+  color: var(--accent-1) !important;
+}
+
+/* Dark overlay adjustments for better contrast */
+.mediaHeader__bgOverlay,
+.aboutHeader__bgOverlay {
+  background: linear-gradient(rgba(0, 30, 23, 0.8) 50%, #001e17 100%) !important;
+}
+
+/* Cookie box styling */
+.cookieBox {
+  background: #202020 !important;
+}
+
+/* Additional complementary styling */
+/* Softer gray for subtle elements */
+.textField__label span,
+.servicesList__service::before,
+.officeList__time span {
+  color: #8a8a8a !important;
+}
+
+/* Enhanced button hover effects */
+.button:hover {
+  background-color: var(--fg-primary) !important;
+  color: var(--bg-primary) !important;
+}
+
+.arrowButton:hover .arrowButton__arrow {
+  background-color: var(--accent-1) !important;
+}
+
+/* Additional text-only color fixes */
+.flipLink span {
+  color: var(--fg-primary) !important;
+  background-color: transparent !important;
+}
+
+/* Ensure links don't have background colors */
+.longform a:hover {
+  background-color: transparent !important;
+}
+
+.nav__link.active,
+.nav__menuLink.active {
+  background-color: transparent !important;
+}
+
+/* Better contrast for form elements */
+.textField__input::placeholder {
+  color: #8a8a8a !important;
+}
+
+/* Enhanced borders and dividers */
+.campaignList__row {
+  border-bottom-color: rgba(164, 129, 17, 0.2) !important;
+}
+
+.officeList__office {
+  border-bottom-color: rgba(164, 129, 17, 0.2) !important;
+}
+
+/* Improved navigation menu */
+.nav__toggle {
+  color: var(--white) !important;
+}
+
+.menu-open .nav__toggle {
+  color: var(--bg-primary) !important;
+}
+
+/* Enhanced video and image borders */
+.homeHeader__mediaCard,
+.workCard__media,
+.window .media {
+  border: 1px solid rgba(164, 129, 17, 0.3) !important;
+}
+
+/* Improved readability for small text */
+.subheading,
+.campaignList__count,
+.ourTeam__count {
+  font-weight: 600 !important;
+}
+
+/* Logo sizing - Make the Suify logo responsive and normal size */
+.nav__logo {
+  height: 3rem !important;
+  width: auto !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nav__logo .media {
+  height: 100% !important;
+  width: auto !important;
+  object-fit: contain !important;
+  max-width: 120px !important;
+}
+
+/* Mobile logo sizing */
+@media screen and (max-width: 800px) {
+  .nav__logo {
+    height: 2.5rem !important;
+    margin-top: 0 !important;
+  }
+  
+  .nav__logo .media {
+    max-width: 100px !important;
+  }
+}
+
+/* Tablet sizing */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .nav__logo {
+    height: 2.8rem !important;
+  }
+  
+  .nav__logo .media {
+    max-width: 110px !important;
+  }
+} 
+
+/* Responsive heading for 'Featured Properties' - Comprehensive fix */
+@media screen and (max-width: 800px) {
+  .campaignList__heading {
+    overflow: hidden !important;
+    max-width: 100% !important;
+  }
+  
+  .campaignList__heading p {
+    font-size: 15vw !important;
+    line-height: 0.8 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .campaignList__heading p {
+    font-size: 12vw !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .campaignList__heading p {
+    font-size: 10vw !important;
+  }
+}
+
+/* Photo Gallery Styling */
+.photoGallery {
+  padding: 8rem 4rem !important;
+  background: var(--bg-primary) !important;
+}
+
+.photoGallery__header {
+  text-align: center !important;
+  margin-bottom: 6rem !important;
+}
+
+.photoGallery__heading {
+  margin-bottom: 2rem !important;
+}
+
+.photoGallery__grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 2rem !important;
+  max-width: 1800px !important;
+  margin: 0 auto !important;
+}
+
+.photoGallery__item {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  background: #202020 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  border: 1px solid rgba(164, 129, 17, 0.3) !important;
+}
+
+.photoGallery__item:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 20px 40px rgba(164, 129, 17, 0.2) !important;
+}
+
+.photoGallery__image {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  transition: transform 0.3s ease !important;
+}
+
+.photoGallery__item:hover .photoGallery__image {
+  transform: scale(1.05) !important;
+}
+
+.photoGallery__overlay {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: linear-gradient(transparent, rgba(0, 30, 23, 0.9)) !important;
+  padding: 2rem 1.5rem 1.5rem !important;
+  transform: translateY(100%) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.photoGallery__item:hover .photoGallery__overlay {
+  transform: translateY(0) !important;
+}
+
+.photoGallery__category {
+  font-size: 0.8rem !important;
+  color: var(--fg-primary) !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
+}
+
+.photoGallery__title {
+  font-size: 1.1rem !important;
+  color: var(--white) !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Responsive adjustments for photo gallery */
+@media screen and (max-width: 1200px) {
+  .photoGallery {
+    padding: 6rem 2rem !important;
+  }
+  
+  .photoGallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .photoGallery {
+    padding: 4rem 1rem !important;
+  }
+  
+  .photoGallery__header {
+    margin-bottom: 4rem !important;
+  }
+  
+  .photoGallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 1rem !important;
+  }
+  
+  .photoGallery__image {
+    height: 220px !important;
+  }
+  
+  .photoGallery__overlay {
+    padding: 1.5rem 1rem 1rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photoGallery__grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .photoGallery__image {
+    height: 200px !important;
+  }
+}
+
+/* Gallery heading responsive fix */
+@media screen and (max-width: 800px) {
+  .photoGallery__heading p {
+    font-size: 15vw !important;
+    line-height: 0.8 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photoGallery__heading p {
+    font-size: 12vw !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .photoGallery__heading p {
+    font-size: 10vw !important;
+  }
+} 
